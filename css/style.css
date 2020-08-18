@@ -138,11 +138,9 @@ header label:active:after {
   color: var(--vlgb-color);
 }
 
-.container .middle button {
-  background: #fff;
-}
-
-.container .middle button a {
+.container .middle .button {
+  background: var(--vlgb-color);
+  border: 1px solid var(--vlgb-color);
   color: var(--gb-color);
 }
 
@@ -160,7 +158,8 @@ header label:active:after {
   border-bottom: 0.4px solid var(--lgb-color);
 }
 
-.container button {
+.container .button {
+  font-family: 'Montserrat', sans-serif;
   padding: .5rem 2.5rem;
   background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(to right, #a3a8f0, #696fdd);
@@ -169,13 +168,9 @@ header label:active:after {
   border-radius: 5px;
   cursor: pointer;
   outline: none;
-}
-
-.container button a {
-  font-family: 'Montserrat', sans-serif;
+  border: 1px solid transparent;
   text-transform: uppercase;
-  letter-spacing: .096rem;
-  text-decoration: none;
+  letter-spacing: 1px;
   font-weight: 700;
   color: var(--vlgb-color);
 }
@@ -206,12 +201,10 @@ header label:active:after {
   }
   .middle {
     padding: 2rem 2rem !important;
-  }
-  .middle button:hover {
     border: 1px solid var(--vlgb-color);
   }
-  .middle button:hover > a {
-    color: var(--vlgb-color);
+  .middle .button:hover {
+    color: var(--vlgb-color) !important;
   }
   h6 {
     padding: .5rem 0 !important;
@@ -221,12 +214,10 @@ header label:active:after {
     border-top: 0.4px solid var(--lgb-color);
     border-bottom: 0.4px solid var(--lgb-color);
   }
-  button:hover, button:active {
+  .button:hover, .button:active {
     background: transparent !important;
-    border: 1px solid var(--dgb-color);
-  }
-  button:hover > a {
-    color: var(--gb-color);
+    color: var(--gb-color) !important;
+    border-color: var(--gb-color);
   }
 }
 

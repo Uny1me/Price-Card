@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   background: var(--vlgb-color);
-  background-image: url(/images/bg-top.svg);
+  background-image: url(../images/bg-top.svg);
   background-size: cover;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
